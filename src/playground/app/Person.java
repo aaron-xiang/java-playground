@@ -1,4 +1,4 @@
-package org.playground;
+package playground.app;
 
 /**
  * Created by henry on 7/31/16.

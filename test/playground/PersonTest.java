@@ -1,5 +1,6 @@
-package org.playground;
+package playground;
 
+import playground.app.Person;
 import org.junit.Assert;
 import org.junit.Test;
 

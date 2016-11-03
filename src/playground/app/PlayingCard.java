@@ -1,4 +1,4 @@
-package org.playground;
+package playground.app;
 
 import java.util.ArrayList;
 import java.util.List;

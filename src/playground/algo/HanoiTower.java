@@ -1,4 +1,4 @@
-package org.playground;
+package playground.algo;
 
 
 public class HanoiTower {

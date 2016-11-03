@@ -1,4 +1,10 @@
-package org.playground;
+package playground;
+
+import playground.algo.HanoiTower;
+import playground.algo.Math;
+import playground.app.PlayingCard;
+import playground.algo.Algorithm;
+import playground.app.Person;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
@@ -17,9 +23,12 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        testPermutation("ABCD");
+        testGCD(12, 0);
     }
 
+    private static void testGCD(int a, int b) {
+        System.out.printf("%d, %d, %d\n", a, b, Math.greatestCommonDivisor(a, b));
+    }
     private static void testPermutation(String input) {
         List<String> results = Algorithm.getPermutation(input);
         for (String s : results) {
