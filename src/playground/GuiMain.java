@@ -2,7 +2,7 @@ package playground;
 
 import javafx.application.Application;
 import javafx.stage.Stage;
-import playground.ui.StopWatch;
+import playground.ui.StopWatchFX;
 
 public class GuiMain extends Application{
     public static void init(String[] args) {
@@ -13,7 +13,8 @@ public class GuiMain extends Application{
     public void start(Stage primaryStage) throws Exception {
         // primaryStage = new Greeter();
 //        primaryStage = new GoogleMap();
-        primaryStage = new StopWatch();
+//        primaryStage = new StopWatch();
+        primaryStage = new StopWatchFX();
         primaryStage.show();
     }
 }
