@@ -99,7 +99,7 @@ public class GoogleMap extends Stage {
     }
 
     private void setZoomLevel(ObservableValue<? extends Number> observable, Number oldValue, Number newValue) {
-        zoomLevel.setText(Double.toString(slider.getValue()));
+        zoomLevel.setText(newValue.toString());
         getMap();
     }
 

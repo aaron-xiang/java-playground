@@ -1,10 +1,10 @@
 package playground;
 
+import playground.algo.Algorithm;
 import playground.algo.HanoiTower;
 import playground.algo.Math;
-import playground.app.PlayingCard;
-import playground.algo.Algorithm;
 import playground.app.Person;
+import playground.app.PlayingCard;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
@@ -24,6 +24,8 @@ public class Main {
 
     public static void main(String[] args) {
         GuiMain.init(args);
+//        DrawTest drawTest = new DrawTest();
+//        drawTest.init();
     }
 
     private static void testGCD(int a, int b) {
