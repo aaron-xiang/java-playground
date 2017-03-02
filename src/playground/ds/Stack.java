@@ -1,46 +1,47 @@
 package playground.ds;
 
-/**
- * Created by henry on 2/17/17.
- */
-public class Stack {
+public class Stack<E> implements AbstractStack<E> {
 
-    int[] data;
+    E[] data;
     int top;
 
-    public class StackOverflowException extends RuntimeException {}
+    public static class StackOverflowException extends RuntimeException {}
 
-    public class StackUnderflowException extends RuntimeException {}
+    public static class StackUnderflowException extends RuntimeException {}
 
-    public class StackEmptyException extends RuntimeException {}
+    public static class StackEmptyException extends RuntimeException {}
 
     public Stack(int size) {
-        data = new int[size];
+        data = (E[]) new Object[size];
         top = -1;
     }
 
 
-    public void push(int input) {
+    @Override
+    public void push(E input) {
         if (top >= data.length - 1)
             throw new StackOverflowException();
         top += 1;
         data[top] = input;
     }
 
-    public int peek() {
+    @Override
+    public E peek() {
         if (top < 0)
             throw new StackEmptyException();
         return data[top];
     }
 
-    public int pop() {
+    @Override
+    public E pop() {
         if (top < 0)
             throw new StackUnderflowException();
-        int output = data[top];
+        E output = data[top];
         top -= 1;
         return output;
     }
 
+    @Override
     public int size() {
         return top + 1;
     }
