@@ -5,9 +5,6 @@ import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-/**
- * Created by henry on 2/18/17.
- */
 public class LinkedListTest {
     LinkedList linkedList;
 
@@ -18,7 +15,6 @@ public class LinkedListTest {
 
     @Test
     public void testAddNodes() throws Exception {
-//        LinkedList linkedList = new LinkedList();
         linkedList.add(1);
         linkedList.add(2);
         linkedList.add(3);

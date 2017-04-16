@@ -1,8 +1,5 @@
 package playground.ds;
 
-/**
- * Created by henry on 2/18/17.
- */
 public class LinkedList {
     class Node {
         int data;
