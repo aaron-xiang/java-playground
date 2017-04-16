@@ -115,27 +115,25 @@ public class LinearE {
     }
 
     private boolean goRight(Cell cell) {
-        int i = cell.row;
-        int j = cell.col;
-        return j+1 < cols && i+1 < rows && data[i][j+1] != ' ' && data[i+1][j] == ' ';
+        return true;
+
     }
 
     private boolean goUp(Cell cell) {
-        int i = cell.row;
-        int j = cell.col;
-        return i-1 >= 0 && j+1 < cols && data[i-1][j] != ' ' && data[i][j+1] == ' ';
+        return true;
+
     }
 
     private boolean goLeft(Cell cell) {
-        int i = cell.row;
-        int j = cell.col;
-        return j-1 >= 0 && i-1 >= 0 && data[i][j-1] != ' ' && data[i-1][j] == ' ';
+        return true;
+
+
     }
 
     private boolean goDown(Cell cell) {
-        int i = cell.row;
-        int j = cell.col;
-        return i+1 < rows && j-1 >= 0 && data[i+1][j] != ' ' && data[i][j-1] == ' ';
+        return true;
+
+
     }
 
 }
