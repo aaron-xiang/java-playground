@@ -16,7 +16,7 @@ import javafx.util.Duration;
 /**
  * Created by henry on 11/24/16.
  */
-public class Stopwatch extends Stage {
+public class StopWatch extends Stage {
     GridPane grid = new GridPane();
     Scene scene = new Scene(grid, 300, 200);
     Label timeDisplay = new Label("00:00:00.000");
@@ -26,7 +26,7 @@ public class Stopwatch extends Stage {
     Timeline timeline;
     int timeElapsed = 0;
 
-    public Stopwatch() {
+    public StopWatch() {
         grid.setAlignment(Pos.CENTER);
         grid.setHgap(10);
         grid.setVgap(10);
